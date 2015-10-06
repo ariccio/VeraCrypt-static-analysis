@@ -50,13 +50,13 @@ set TC_TEST_SIGN=0
 :: Windows Driver Kit root
 
 set TC_WINDDK_ROOT=%SYSTEMDRIVE%\WinDDK\%TC_WINDDK_BUILD%
-if exist "%TC_WINDDK_ROOT%\bin\setenv.bat" goto ddk_found
+if exist "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" goto ddk_found
 
 set TC_WINDDK_ROOT=%WINDDK_ROOT%\%TC_WINDDK_BUILD%
-if exist "%TC_WINDDK_ROOT%\bin\setenv.bat" goto ddk_found
+if exist "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" goto ddk_found
 
 set TC_WINDDK_ROOT=%WINDDK_ROOT%
-if exist "%TC_WINDDK_ROOT%\bin\setenv.bat" goto ddk_found
+if exist "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" goto ddk_found
 
 echo BuildDriver.cmd: error: Windows Driver Development Kit not found in the default directory. Set WINDDK_ROOT environment variable to point to your Windows DDK installation directory. >&2
 exit /B 1
