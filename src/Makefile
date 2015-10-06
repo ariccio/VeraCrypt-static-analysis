@@ -33,7 +33,6 @@ export APPNAME := veracrypt
 export BASE_DIR := $(CURDIR)
 export BUILD_INC := $(BASE_DIR)/Build/Include
 export PKCS11_INC := $(BASE_DIR)/Pkcs11
-export MSVC16_ROOT := 
 
 
 
